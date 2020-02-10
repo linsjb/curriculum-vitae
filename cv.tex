@@ -1,0 +1,32 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv/friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,       % no lik border color
+   allbordercolors=white    % white border color for all
+}
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{Linus}{Sjöbro}
+      {4th Year computer engineering student}
+      
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+\input{content/aside.tex}
+\input{content/about.tex}
+\input{content/education.tex}
+\input{content/experience.tex}
+\input{content/works.tex}
+\end{document}
